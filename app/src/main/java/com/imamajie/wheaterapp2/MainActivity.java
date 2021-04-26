@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                                                         JSONArray jsonArray = jsonResponse.getJSONArray("daily");
 //                                                        JSONObject jsonObjectWeather = jsonResponse.getJSONObject("daily");
 //                                                        JSONArray jsonWeather = jsonArray.getJSONArray(14);
-                                                        tvResult.setTextColor(Color.rgb(68,134,199));
+                                                        tvResult.setTextColor(Color.rgb(230,153,0));
                                                         output += "Current weather of " + lat + " (" + lon + ")"
                                                                 + "\n Time Zone : "+ timezone + "\n";
 
@@ -162,6 +162,7 @@ public class MainActivity extends AppCompatActivity {
         String tempUrl = "";
         String city = etCity.getText().toString().trim();
         String country = etCountry.getText().toString().trim();
+        tvResult.setTextColor(Color.rgb(25,255,140));
         if (city.equals("")){
             tvResult.setText("City field can not be empty!");
         }else{

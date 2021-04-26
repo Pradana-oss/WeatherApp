@@ -3,6 +3,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\PRADANA\\wheatherApp2KeyStore.jks')
+            storePassword '1234567890'
+            keyAlias 'key0'
+            keyPassword '1234567890'
+        }
+    }
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
